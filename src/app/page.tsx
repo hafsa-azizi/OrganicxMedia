@@ -3,8 +3,8 @@ import Image from "next/image";
 import { useState } from "react";
 import SplashScreen from '../components/SplashScreen';
 import styles from '../components/SplashScreen.module.css';
-import HeroSection from "@/components/HeroSection";
 import HeroSectionSwiper from "@/components/HeroSectionSwiper";
+import ServicesGrid from "@/components/OXservicesGrid";
 
 export default function Home() {
   const [isSplashVisible, setIsSplashVisible] = useState(true);
@@ -19,6 +19,7 @@ export default function Home() {
     <main >
     {/* <HeroSection /> */}
     <HeroSectionSwiper />
+    <ServicesGrid/>
     </main>
   </div>
   );

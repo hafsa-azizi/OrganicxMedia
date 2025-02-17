@@ -20,9 +20,7 @@ const HeroSection: React.FC = () => {
   const [activeSlide, setActiveSlide] = useState<number>(0);
   const [isPopupOpen, setIsPopupOpen] = useState<boolean>(false); // State to control popup visibility
 
-  const swiperRef = useRef<any>(null); // Ref to access the Swiper instance
-
-  // Sample data for slides with explicit type
+  const swiperRef = useRef<any>(null); // Ref to access the Swiper instancepe
   const slides: Slide[] = [
     {
       image: "/images/slider_image_1.avif", // Replace with your image paths
@@ -31,13 +29,13 @@ const HeroSection: React.FC = () => {
     },
     {
       image: "/images/slider_image_2.avif",
-      logoFilter: "invert(100%)", // White logo
-      dotFilter: "invert(100%)", // White logo
+      logoFilter: "invert(100%)",
+      dotFilter: "invert(100%)", 
     },
     {
       image: "/images/slider_image_3.avif",
-      logoFilter: "invert(0%)", // Red logo
-      dotFilter: "invert(0%)", // Red logo
+      logoFilter: "invert(0%)", 
+      dotFilter: "invert(0%)", 
     },
   ];
 
@@ -54,7 +52,7 @@ const HeroSection: React.FC = () => {
 
   // Update activeSlide when Swiper changes slides
   const handleSlideChange = (swiper: any) => {
-    setActiveSlide(swiper.realIndex); // Use `realIndex` to get the correct index in loop mode
+    setActiveSlide(swiper.realIndex); 
   };
 
   // Function to toggle popup visibility
@@ -85,7 +83,7 @@ const HeroSection: React.FC = () => {
           style={{ filter: slides[activeSlide].logoFilter }}
         >
           <Image
-            src="/images/OX_Logo_black.png" // Replace with your logo path
+            src="/images/OX_Logo_black.png"
             alt="Logo"
             width={150}
             height={100}
@@ -116,13 +114,12 @@ const HeroSection: React.FC = () => {
                   {/* Logo */}
                   <div className={styles.logo}>
                     <Image
-                      src="/images/OX_Logo_black.png" // Replace with your logo path
+                      src="/images/OX_Logo_black.png" 
                       alt="Logo"
                       width={150}
                       height={100}
                     />
                   </div>
-
                   {/* cross in the top-right corner */}
                   <div>
                     <RxCross1

@@ -30,8 +30,8 @@
 
 /* Dot styling */
 .dot {
-  width: 20px; /* Size of the dot */
-  height: 20px; /* Size of the dot */
+  width: 30px; /* Size of the dot */
+  height: 30px; /* Size of the dot */
   background-color: #ff3b30; /* Red color for the dot */
   border-radius: 50%; /* Make it circular */
   box-shadow: 0 0 8px rgba(255, 59, 48, 0.6); /* Optional glow effect */
