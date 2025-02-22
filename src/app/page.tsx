@@ -5,6 +5,7 @@ import SplashScreen from '../components/SplashScreen';
 import styles from '../components/SplashScreen.module.css';
 import HeroSectionSwiper from "@/components/HeroSectionSwiper";
 import ServicesGrid from "@/components/OXservicesGrid";
+import StickyScrollSection from "@/components/stickyscroll";
 
 export default function Home() {
   const [isSplashVisible, setIsSplashVisible] = useState(true);
@@ -20,7 +21,9 @@ export default function Home() {
     {/* <HeroSection /> */}
     <HeroSectionSwiper />
     <ServicesGrid/>
-    </main>
+    <StickyScrollSection />
+    <ServicesGrid/>
+    </main> 
   </div>
   );
 }

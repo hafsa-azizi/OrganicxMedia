@@ -52,7 +52,7 @@ export default function ServicesGrid() {
     
 
       {/* Grid */}
-      <div className="space-y-4 sm:space-y-6 mt-6 sm:mt-8">
+      <div className="space-y-4 sm:space-y-4 mt-6 sm:mt-8">
         {rows.map((row, rowIndex) => {
           // Create independent movement for each row
           const xMovement = useTransform(
@@ -64,7 +64,7 @@ export default function ServicesGrid() {
           return (
             <div key={rowIndex} className="w-full overflow-hidden">
               <motion.div
-                className="flex gap-2 sm:gap-4 px-4 sm:px-6"
+                className="flex gap-2 sm:gap-4 px-2 sm:px-6"
                 style={{ x: xMovement }}
               >
                 {row.map((item, index) => (
