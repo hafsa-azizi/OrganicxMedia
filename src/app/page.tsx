@@ -6,6 +6,9 @@ import styles from '../components/SplashScreen.module.css';
 import HeroSectionSwiper from "@/components/HeroSectionSwiper";
 import ServicesGrid from "@/components/OXservicesGrid";
 import StickyScrollSection from "@/components/stickyscroll";
+import AdsSection from "@/components/Advertisement";
+import Footer from "@/components/Footer";
+import LogoSection from "@/components/LogoSection";
 
 export default function Home() {
   const [isSplashVisible, setIsSplashVisible] = useState(true);
@@ -22,7 +25,9 @@ export default function Home() {
     <HeroSectionSwiper />
     <ServicesGrid/>
     <StickyScrollSection />
-    <ServicesGrid/>
+    <AdsSection/>
+    <LogoSection />
+    <Footer />
     </main> 
   </div>
   );
