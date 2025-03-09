@@ -9,6 +9,7 @@ import StickyScrollSection from "@/components/stickyscroll";
 import AdsSection from "@/components/Advertisement";
 import Footer from "@/components/Footer";
 import LogoSection from "@/components/LogoSection";
+import NicheSlidingSection from "@/components/NicheSlidingSection";
 
 export default function Home() {
   const [isSplashVisible, setIsSplashVisible] = useState(true);
@@ -26,6 +27,7 @@ export default function Home() {
     <ServicesGrid/>
     <StickyScrollSection />
     <AdsSection/>
+    <NicheSlidingSection />
     <LogoSection />
     <Footer />
     </main> 
