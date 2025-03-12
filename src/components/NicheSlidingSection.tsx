@@ -31,7 +31,7 @@ const slides = [
     },
 ];
 
-export default function NicheSlidingSection() {
+export default function NicheSliding() {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     useEffect(() => {

@@ -20,3 +20,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
+
+@keyframes Sparkle {
+  0% {
+    background-position: 0% 0%, 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%, 100% 100%;
+  }
+}
+
+.sparkle-background {
+  background-image: url('/images/sparkle1.png'), url('/images/sparkle2.png');
+  animation: Sparkle 60s linear infinite;
+}

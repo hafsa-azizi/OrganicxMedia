@@ -27,6 +27,7 @@ export default {
       },
       fontFamily: {
         sans: ["SF Pro", "Helvetica", "Arial", "sans-serif"],
+        rebond: ["ES Rebond Grotesque Medium","ES Rebond", "cursive" ],
       },
       fontSize: {
         hero: "4rem", // 64px

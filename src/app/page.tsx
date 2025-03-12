@@ -5,11 +5,15 @@ import SplashScreen from '../components/SplashScreen';
 import styles from '../components/SplashScreen.module.css';
 import HeroSectionSwiper from "@/components/HeroSectionSwiper";
 import ServicesGrid from "@/components/OXservicesGrid";
-import StickyScrollSection from "@/components/stickyscroll";
+import StickyScroll from "@/components/stickyscroll";
+import AdsMockup from "@/components/AdsMockupSection";
+import Sparkling from "@/components/SparklingSection";
 import AdsSection from "@/components/Advertisement";
 import Footer from "@/components/Footer";
 import LogoSection from "@/components/LogoSection";
-import NicheSlidingSection from "@/components/NicheSlidingSection";
+import NicheSliding from "@/components/NicheSlidingSection";
+import VideoProduction from "@/components/VideoProduction";
+import ClientsLogo from "@/components/ClientslogoMarque";
 
 export default function Home() {
   const [isSplashVisible, setIsSplashVisible] = useState(true);
@@ -25,10 +29,13 @@ export default function Home() {
     {/* <HeroSection /> */}
     <HeroSectionSwiper />
     <ServicesGrid/>
-    <StickyScrollSection />
+    <StickyScroll />
+    <AdsMockup />
+    <Sparkling />
+    <VideoProduction />
     <AdsSection/>
-    <NicheSlidingSection />
-    <LogoSection />
+    <ClientsLogo />
+    <NicheSliding />
     <Footer />
     </main> 
   </div>
