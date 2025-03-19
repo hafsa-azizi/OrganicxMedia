@@ -26,7 +26,7 @@ const logos = [
 const MarqueeRow = ({ direction = 'left', speed = 40 }) => {
   return (
     <motion.div
-      className="flex space-x-8"
+      className="flex"
       animate={{
         x: direction === 'left' ? '-100%' : '100%',
       }}
@@ -34,11 +34,11 @@ const MarqueeRow = ({ direction = 'left', speed = 40 }) => {
         duration: speed,
         repeat: Infinity,
         ease: 'linear',
-    
       }}
     >
+      {/* First Set of Logos */}
       {logos.map((logo) => (
-        <div key={`${logo.id}`}className="flex-shrink-0">
+        <div key={logo.id} className="flex-shrink-0 px-4"> {/* Use px-4 for spacing */}
           <Image
             src={logo.src}
             alt={logo.alt}
@@ -48,9 +48,9 @@ const MarqueeRow = ({ direction = 'left', speed = 40 }) => {
           />
         </div>
       ))}
-      {/* Duplicate logos for seamless looping */}
+      {/* Duplicate Logos for Seamless Looping */}
       {logos.map((logo) => (
-        <div key={`${logo.id}-duplicate`} className="flex-shrink-0">
+        <div key={`${logo.id}-duplicate`} className="flex-shrink-0 px-4"> {/* Use px-4 for spacing */}
           <Image
             src={logo.src}
             alt={logo.alt}
@@ -67,21 +67,22 @@ const MarqueeRow = ({ direction = 'left', speed = 40 }) => {
 const ClientsLogo = () => {
   return (
     <section className="bg-white overflow-hidden py-10">
-        <div className='pl-10'>
+      <div className="pl-10">
         <h1 className="text-8xl font-bold font-rebond">
-        <span className="text-black">IN GOOD </span>
-        <span className="bg-gradient-to-r from-blue-400 to-blue-800 text-transparent bg-clip-text">COMPANY</span><span className="text-blue-800">.</span>
+          <span className="text-black">IN GOOD </span>
+          <span className="bg-gradient-to-r from-blue-400 to-blue-800 text-transparent bg-clip-text">COMPANY</span>
+          <span className="text-blue-800">.</span>
         </h1>
-        </div>
+      </div>
 
-      <div className="flex flex-col w-[100%] mx-auto px-4">
+      <div className="flex flex-col w-full mx-auto px-4">
         {/* First Row */}
         <div className="mb-4 overflow-hidden">
           <MarqueeRow direction="left" speed={40} />
         </div>
         {/* Second Row */}
         <div className="mb-4 overflow-hidden">
-          <MarqueeRow direction="right" speed={40} />
+          <MarqueeRow direction="right" speed={50} />
         </div>
         {/* Third Row */}
         <div className="overflow-hidden">
